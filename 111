@@ -1,0 +1,12 @@
+#解析json文件
+
+import json
+
+def get_jsondata():
+    jsonfile = 'configs\jj Copy.postman_collection.json'
+    with open(jsonfile,encoding='utf-8') as fi:
+        data1 = json.load(fi)
+    return data1
+
+if __name__ == '__main__':
+    print(get_jsondata())
